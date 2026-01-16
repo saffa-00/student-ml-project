@@ -58,12 +58,14 @@ This is a full **end-to-end applied ML project**, from data preprocessing and mo
 
 
 2. Start the FastAPI server:
-  cd app
+   cd app
    uvicorn main:app --reload
 
 
-3. Open API docs in browser:
-   http://127.0.0.1:8000/docs#/default/predict_predict_post
+3. Open API docs in browser(local only):
+   http://127.0.0.1:8000/docs
+   ⚠️ Note: The API link works only while running locally. To access it, start the FastAPI server on your machine first. This is not a public URL.
+   
 
 4. Test /predict endpoint by providing a JSON input below.
 {
@@ -109,4 +111,3 @@ Missing features are filled with 0 during API prediction.
 Deployment is optional; the project is fully functional locally.
 
 Demonstrates full ML workflow: data preprocessing → model training → evaluation → optional API.
-
